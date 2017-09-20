@@ -1,19 +1,56 @@
 {
   "name": "intersection-lazyload",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lazyload power with IntersectionObserver",
+  "main": "dist/intersection-lazyload.umd.js",
+  "module": "dist/intersection-lazyload.es5.js",
+  "es2015": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "dev": "npm run clean && npm run rollup -- --watch",
+    "build": "npm run clean && npm run rollup",
+    "lint": "eslint src",
+    "rollup": "rollup --config",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "prepublishOnly": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samouss/intersection-lazyload.git"
+    "url": "https://github.com/samouss/react-infinite-list.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/samouss/intersection-lazyload/issues"
-  },
-  "homepage": "https://github.com/samouss/intersection-lazyload#readme"
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "lazyload",
+    "intersection-observer"
+  ],
+  "author": [
+    "Samuel Vaillant <samuel.vllnt@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-stage-2": "6.24.1",
+    "eslint": "4.7.1",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-config-prettier": "2.5.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jest": "21.1.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-prettier": "2.3.1",
+    "eslint-plugin-react": "7.3.0",
+    "jest": "21.1.0",
+    "prettier": "1.7.0",
+    "rollup": "0.50.0",
+    "rollup-plugin-babel": "3.0.2",
+    "rollup-plugin-commonjs": "8.2.1",
+    "rollup-plugin-filesize": "1.4.2",
+    "rollup-plugin-uglify": "2.0.1"
+  }
 }
