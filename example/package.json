@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Exemple for intersection-lazyload",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline"
   },
   "repository": {
     "type": "git",
