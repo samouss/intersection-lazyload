@@ -1,6 +1,6 @@
 {
   "name": "intersection-lazyload",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Lazyload power with IntersectionObserver",
   "main": "dist/intersection-lazyload.umd.js",
   "module": "dist/intersection-lazyload.es5.js",
