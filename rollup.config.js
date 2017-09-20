@@ -1,5 +1,4 @@
 import path from 'path';
-import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import uglify from 'rollup-plugin-uglify';
 import filesize from 'rollup-plugin-filesize';
@@ -13,7 +12,6 @@ const main = pkg.main;
 const extname = path.extname(pkg.main);
 
 const defaultPlugins = filter([
-  commonjs(),
   babel({
     exclude: 'node_modules/**',
     plugins: ['external-helpers'],
