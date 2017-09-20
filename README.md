@@ -1,6 +1,6 @@
 # Intersection Lazyload
 
-[![npm version](https://badge.fury.io/js/intersection-lazyload.svg)](https://badge.fury.io/js/intersection-lazyload) [![Build Status](https://travis-ci.org/samouss/intersection-lazyload.svg?branch=master)](https://travis-ci.org/samouss/intersection-lazyload)
+[![npm version](https://badge.fury.io/js/intersection-lazyload.svg)](https://badge.fury.io/js/intersection-lazyload)
 
 ## Installation
 
@@ -17,19 +17,23 @@ Import the module in your application:
 
 ```js
 // From ES6
-import lazy from 'intersection-lazyload'
+import lazyload from 'intersection-lazyload'
 
 // From CJS
-const lazy = require('intersection-lazyload').default;
+const lazyload = require('intersection-lazyload').default;
 
 // From global
-const lazy = IntersectionLazyload.default;
+const lazyload = IntersectionLazyload.default;
 ```
 
 Then use it juste like that:
 
+```html
+<img class="--lazyload" data-src="your-picture.png">
+```
+
 ```js
-// TO COMPLETE
+lazyload();
 ```
 
 ## Run the test
