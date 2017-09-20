@@ -9,3 +9,22 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #f7f7f7;
 }
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.list__item {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__item__picture {
+  width: 640px;
+  height: 480px;
+  border: 1px solid black;
+}
